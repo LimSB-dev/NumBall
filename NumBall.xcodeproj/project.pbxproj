@@ -20,6 +20,7 @@
 		1905870A28660E2A0085DCF1 /* KeyPadRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905870928660E2A0085DCF1 /* KeyPadRow.swift */; };
 		1905870C28660F0B0085DCF1 /* KeyPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905870B28660F0B0085DCF1 /* KeyPad.swift */; };
 		1905870F286697760085DCF1 /* PlayListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1905870E286697760085DCF1 /* PlayListRow.swift */; };
+		1956A64A288C2E31001F8BAB /* NumBall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1956A648288C2E31001F8BAB /* NumBall.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1905870928660E2A0085DCF1 /* KeyPadRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPadRow.swift; sourceTree = "<group>"; };
 		1905870B28660F0B0085DCF1 /* KeyPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPad.swift; sourceTree = "<group>"; };
 		1905870E286697760085DCF1 /* PlayListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListRow.swift; sourceTree = "<group>"; };
+		1956A649288C2E31001F8BAB /* NumBall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NumBall.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				190586FE2864BE170085DCF1 /* Info.plist */,
+				1956A648288C2E31001F8BAB /* NumBall.xcdatamodeld */,
 				190586E628643A300085DCF1 /* NumBallApp.swift */,
 				190586F428643A3D0085DCF1 /* View */,
 				190586FB2864713E0085DCF1 /* ViewModel */,
@@ -217,6 +220,7 @@
 				190586E928643A300085DCF1 /* ContentView.swift in Sources */,
 				190586E728643A300085DCF1 /* NumBallApp.swift in Sources */,
 				1905870828660DDC0085DCF1 /* KeyPadButton.swift in Sources */,
+				1956A64A288C2E31001F8BAB /* NumBall.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +425,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1956A648288C2E31001F8BAB /* NumBall.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1956A649288C2E31001F8BAB /* NumBall.xcdatamodel */,
+			);
+			currentVersion = 1956A649288C2E31001F8BAB /* NumBall.xcdatamodel */;
+			path = NumBall.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 190586DB28643A300085DCF1 /* Project object */;
 }
