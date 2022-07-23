@@ -1,6 +1,8 @@
-# NumBall
+# NumBall ⚾️
 
-MY First Toy Project
+My First Toy Project
+
+취미로 iOS 어플 만들고 있습니다.
 
 # ScreenShot
 
