@@ -41,9 +41,9 @@ struct PlayView: View {
             NumberField()
     
             Button(action: {
-        
+                Hit()
             }, label: {
-                Text("Hit! \(currentIndex)")
+                Text("Hit!")
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .padding(.vertical, 12)
@@ -54,13 +54,7 @@ struct PlayView: View {
                     )
             })
             .padding(.top)
-
-            KeyPad(string: $ntfModel.ntfFields[currentIndex])
-                .frame(width: 300,height: UIScreen.main.bounds.height / 3.5)
-                .padding(.vertical)
                 
-  
-            
             
             GeometryReader { _ in
                 EmptyView()
@@ -81,10 +75,6 @@ struct PlayView: View {
         for index in 0..<3 {
             if value[index].count == 1 && activeStateForIndex(index: index) == activeField {
                 activeField = activeStateForIndex(index: index + 1)
-                
-//                if currentIndex < 3 {
-//                    currentIndex += 1
-//                }
             }
         }
         
@@ -94,9 +84,6 @@ struct PlayView: View {
         for index in 1...3 {
             if value[index].isEmpty && !value[index - 1].isEmpty {
                 activeField = activeStateForIndex(index: index - 1)
-//                if currentIndex > 0 {
-//                    currentIndex -= 1
-//                }
             }
         }
 
@@ -127,6 +114,14 @@ struct PlayView: View {
                 }
                 .frame(width: 40)
             }
+        }
+    }
+    
+    func Hit() {
+        for index in 0...3 {
+            
+            ntfModel.ntfFields[index] = ""
+            activeField = activeStateForIndex(index: 0)
         }
     }
     
